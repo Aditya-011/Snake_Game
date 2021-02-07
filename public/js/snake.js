@@ -1,8 +1,3 @@
-/*
-Create by Learn Web Developement
-Youtube channel : https://www.youtube.com/channel/UC8n8ftV94ZU_DJLOLtrpORA
-*/
-
 const cvs = document.getElementById("snake");
 const ctx = cvs.getContext("2d");
 
@@ -74,7 +69,6 @@ function direction(event) {
         d = "DOWN";
         down.play();
     }
-    disableScroll();
 }
 
 // cheack collision function
@@ -145,7 +139,6 @@ function draw() {
     ) {
         clearInterval(game);
         dead.play();
-        enableScroll();
     }
 
     snake.unshift(newHead);
@@ -157,7 +150,7 @@ function draw() {
 
 // call draw function every 100 ms
 
-let game = setInterval(draw, 100);
+let game = setInterval(draw, 150);
 
 const restart = () => {
     location.reload();
@@ -169,12 +162,29 @@ document.addEventListener("keypress", (event) => {
     }
 });
 
-function disableScroll() {
-    document.body.classList.add("stop-scrolling");
-}
-
-function enableScroll() {
-    document.body.classList.remove("stop-scrolling");
-    document.body.classList.add("start-scrolling");
-    console.log("hello");
-}
+var keys = {};
+window.addEventListener(
+    "keydown",
+    function(e) {
+        keys[e.keyCode] = true;
+        switch (e.keyCode) {
+            case 37:
+            case 39:
+            case 38:
+            case 40: // Arrow keys
+            case 32:
+                e.preventDefault();
+                break; // Space
+            default:
+                break; // do not block other keys
+        }
+    },
+    false
+);
+window.addEventListener(
+    "keyup",
+    function(e) {
+        keys[e.keyCode] = false;
+    },
+    false
+);
