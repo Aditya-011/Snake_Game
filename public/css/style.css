@@ -51,12 +51,10 @@ header h1 {
   color: #004953;
 }
 
-button {
+.button {
   background: #fc5c9c;
   border: none;
   text-align: center;
-  margin-left: 5rem;
-  margin-bottom: -10vh;
   padding: 0.4rem 0.6rem;
   font-size: 1rem;
   font-weight: 550;
