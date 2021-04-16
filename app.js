@@ -1,7 +1,6 @@
 // Full Documentation - https://docs.turbo360.co
 const vertex = require("vertex360")({ site_id: process.env.TURBO_APP_ID });
 const express = require("express");
-
 const app = express(); // initialize app
 
 /*  Apps are configured with settings as shown in the conig object below.
@@ -10,15 +9,15 @@ const app = express(); // initialize app
     https://docs.turbo360.co */
 
 const config = {
-    views: "views", // Set views directory
-    static: "public", // Set static assets directory
-    logging: true,
+  views: "views", // Set views directory
+  static: "public", // Set static assets directory
+  logging: true,
 
-    /*  To use the Turbo 360 CMS, from the terminal run
+  /*  To use the Turbo 360 CMS, from the terminal run
         $ turbo extend cms
         then uncomment line 21 below: */
 
-    // db: vertex.nedb()
+  // db: vertex.nedb()
 };
 
 vertex.configureApp(app, config);
