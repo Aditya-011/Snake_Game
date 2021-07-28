@@ -1,12 +1,38 @@
-# Snake_Game
+
+# Snake Game
+
 Snake Game made using Vanilla Js and deployed using Turbo 360 environment .
+## Demo
 
-##
+https://snake-game-zkqph3.turbo360-vertex.com
 
-For Live demo, [click here:](https://snake-game-zkqph3.turbo360-vertex.com/)
+  
+## Deployment
 
-- <img src="public/images/snake-game.png">
+To deploy this project run
+
+```bash
+  npm install
 ```
-For Screen size less than 700px
+```bash
+  turbo devserver
 ```
-- <img src="public/images/min-snake-game.png">
+
+## Features
+
+- Keyboard Controls
+- Audio engagement
+- Simple UI
+
+  
+## Screenshots
+
+![App Screenshot](public/images/snake-game.png)
+![App Screenshot](public/images/min-snake-game.png)
+
+  
+## Support
+
+For support, email adihgr18@gmail.com.
+
+  
