@@ -23,7 +23,7 @@ To deploy this project run
 - Keyboard Controls
 - Audio engagement
 - Simple UI
-
+- Not supported for mobile devices
   
 ## Screenshots
 
