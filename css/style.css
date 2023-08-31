@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Commissioner", sans-serif;
+  height: 100vh;
+  background: #fcefee;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  height: 380px;
+  width: 380px;
+  clip-path: circle(50% at 50% 50%);
+  z-index: -1;
+}
+
+body::before {
+  transform: translateY(20px);
+  background: #a2d149;
+  left: -200px;
+  top: -100px;
+}
+
+body::after {
+  background: #4a752c;
+  left: -100px;
+  top: -200px;
+}
+
+header::before {
+  content: "";
+  height: 600px;
+  background: #c5e3f6;
+  clip-path: circle(50% at 50% 50%);
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #004953;
+}
+
+.button {
+  background: #fc5c9c;
+  border: none;
+  text-align: center;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  font-weight: 550;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.error {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #004953;
+  text-align: center;
+}
