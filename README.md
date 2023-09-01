@@ -36,10 +36,10 @@ cd Snake_Game
 ```
 Open the `index.html` file in a web browser.
 
-##Controls
+## Controls
 Use the arrow keys (up, down, left, right) to control the snake's direction.
 
-##Contributing
+## Contributing
 Contributions are welcome! If you find any issues or want to enhance the game, feel free to open a pull request. Make sure to follow the existing coding style and add appropriate improvements to the gameplay or design.
 1. Fork the repository.
 2. Create a new branch.
