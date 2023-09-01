@@ -35,13 +35,15 @@ git clone https://github.com/ad1tyaSharma/Snake_Game.git
 cd Snake_Game
 ```
 Open the `index.html` file in a web browser.
+
 ##Controls
 Use the arrow keys (up, down, left, right) to control the snake's direction.
+
 ##Contributing
 Contributions are welcome! If you find any issues or want to enhance the game, feel free to open a pull request. Make sure to follow the existing coding style and add appropriate improvements to the gameplay or design.
 1. Fork the repository.
 2. Create a new branch.
 3. Make your changes and commit them.
 4. Push the changes to your fork.
-5. Open a pull request explaining your changes.
-Feel free to reach out to the project owner at `adihgr18@gmail.com` with any questions or feedback!
+5. Open a pull request explaining your changes.<br/>
+Feel free to reach out to the project owner at adihgr18@gmail.com with any questions or feedback!
